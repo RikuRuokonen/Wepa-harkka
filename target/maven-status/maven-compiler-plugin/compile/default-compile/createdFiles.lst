@@ -1,0 +1,4 @@
+wad/newsdatabase/NewsDatabaseApplication.class
+wad/newsdatabase/NewsDatabaseController.class
+wad/newsdatabase/Article.class
+wad/newsdatabase/NewsRepository.class

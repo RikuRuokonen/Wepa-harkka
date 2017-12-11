@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:text="${item.name}"></title>
+        <link href="https://fonts.googleapis.com/css?family=Taviraj|Work+Sans" rel="stylesheet">
+        <style>
+        body {
+            background-color: #F6F6F6;
+        }
+        
+        h2{
+            font-size: 30px;
+            font-family: 'Work Sans', sans-serif;
+            background-color: #2B2B2B;
+            height: 70px;
+            padding: 20px;
+            color: #F6F6F6;
+            text-align: center;
+            
+        }
+        
+        h3{
+            font-family: 'Taviraj', serif;
+        }
+        
+        p{
+            font-family: 'Taviraj', serif;
+        }
+        
+        img{
+            max-width: 360px;
+        }
+        
+        .textbox{
+            width: 70%;
+        }
+        
+        .container{
+            margin-left: 40px;
+        }
+        
+        </style>
+    </head>
+
+    <body>
+        <h2 th:text="${item.name}">item name</h2>
+        <div class="container">
+            <h3 th:text="${item.ingress}">item ingress</h3>
+            <div class="textbox">
+                <p th:text="${item.content}">item content</p>  
+            </div>
+            <img th:src="${item.url}" />
+            <p>Uutista on luettu <span th:text="${item.checked}"></span> kertaa.</p>
+            <p>Kirjoittaja: <span th:text="${item.author}"</span></p>
+
+        <a th:href="@{/}">Takaisin uutisiin</a>
+        </div>
+       
+    </body>
+</html>
